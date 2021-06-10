@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-(Images/diagram_filename.png)
+Diagrams/diagram.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the install-elk.yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -27,7 +27,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - What does Metricbeat record? Changes in system metrics, such as CPU usage.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -44,7 +44,7 @@ Only the jump box machine can accept connections from the Internet. Access to th
 - 24.242.83.59
 
 Machines within the network can only be accessed by each other.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address? The jump box. 10.0.0.4
+- Which machine did you allow to access your ELK VM? What was its IP address? The jump box. 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
@@ -93,7 +93,6 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include which VMs to run each playbook on.
 - Run the playbook, and navigate to /etc/ansible to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it? filebeat-config.yml; You copy it to /etc/ansible/files/filebeat-config.yml
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? You change the /etc/hosts file and add [webservers] and [elk]
 - _Which URL do you navigate to in order to check that the ELK server is running? https://23.96.119.49:5601
